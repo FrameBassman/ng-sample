@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, transition } from '@angular/core';
 
 @Component( {
     selector: 'app-user',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class UserComponent {
     @Input() user;
+    isPinned = false;
+
+    onClick() {
+        this.isPinned = true;
+    }
 }
