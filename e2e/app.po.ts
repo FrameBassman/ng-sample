@@ -5,7 +5,7 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getCardsQuantity() {
+    return element.all(by.css('app-user')).count();
   }
 }
